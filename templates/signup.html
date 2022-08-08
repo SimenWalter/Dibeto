@@ -1,0 +1,25 @@
+
+{% block content %}
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<form method="POST" action="/signup">
+    <h1>Sign up</h1>
+    </div><br>
+    <div class="signup-user">
+        <label>Username</label>
+        <input type="text" id="user" name="user"/>
+       </div><br>
+    <div class="signupPass">
+        <label>Password</label>
+        <input type="password" id="pass" name="user"/>
+    </div><br>
+
+    <button class="signupButton" type="submit">Sign up</button>
+
+</form>
+
+
+{% endblock %}

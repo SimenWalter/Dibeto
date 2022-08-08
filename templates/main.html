@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Main page</title>
+  <link rel="stylesheet" href="../static/style.css">
+  
+</head>
+
+<body>
+  <nav class="navbar-buttons">
+    <div class="login-signup-logout"></div>
+    <a href="/index" class="button">Home</a>
+    <a href="/claims" class="button">Claims</a>
+    <a href="/replies" class="button">Replies</a>
+    </nav>
+
+  <button onclick="document.getElementById('login').style.display='block'" class="btn btn-success  pull-left">Login</button>
+
+  <div id="login" class="modal">
+
+    <form class="modal-content animate" action="/home" method="POST">
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn btn-success">Login</button>
+        <a href="/signup" class="button">New User?</a>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('login').style.display='none'"
+          class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+
+    <div class="well text-center">
+
+      <h1>Dibeto</h1>
+
+
+    </div>
+</body>
+
+</html>
